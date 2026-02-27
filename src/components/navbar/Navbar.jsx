@@ -4,6 +4,7 @@ import { IoCartOutline } from "react-icons/io5";
 import { IoIosHeartEmpty } from "react-icons/io";
 import { IoSearch } from "react-icons/io5";
 import { GoPersonAdd } from "react-icons/go";
+import { Link } from 'react-router-dom';
 
 
 
@@ -16,10 +17,10 @@ const Navbar = () => {
       </div>
       <div className="menu">
         <ul className='flex gap-[75px] font-poppin font-medium text-[16px] text-[#000000]'>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><Link  to="/">Home</Link></li>
+          <li><Link  to="/shop">Shop</Link></li>
+          <li><Link  to="/about">About</Link></li>
+          <li><Link  to="/contact">Contact</Link></li>
         </ul>
       </div>
       <div className="btn flex gap-[47px]">
