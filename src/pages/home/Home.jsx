@@ -5,6 +5,14 @@ import Banner from '../../components/home/Banner'
 
 
 const Home = () => {
+  ('.fade').slick({
+  dots: true,
+  infinite: true,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear'
+});
+			
   return (
     <>
       <section className='banner_img_part'>
@@ -198,6 +206,25 @@ const Home = () => {
         </div>
       </section>
       {/* =============== our product part end =================== */}
+
+      {/* ======================= beautiful room here */}
+      <section className='bg-[#FCF8F3]'>
+        <div className="container">
+          <div className='py-[44px]'>
+            <h2 className='font-poppin font-bold text-[40px] text-[#3A3A3A] w-[442px]'>50+ Beautiful rooms 
+inspiration</h2>
+<p className='font-poppin font-medium text-[16px] text-[#616161] w-[368px]  pt-2 pb-[25px]'>Our designer already made a lot of beautiful prototipe of rooms that inspire you</p>
+<CommonButton buttontext="Explore More"/>
+          </div>
+          <div>
+            <div class="your-class">
+  <div>your content</div>
+  <div>your content</div>
+  <div>your content</div>
+</div>
+          </div>
+        </div>
+      </section>
     </>
   )
 }
